@@ -1,0 +1,44 @@
+.quotes-root {
+  margin: 40px auto;
+  /* size of image */
+  width: 650px;
+}
+
+.quotes-root img {
+  display: block;
+}
+
+.quote-display {
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.quote {
+  position: absolute;
+  left: 0;
+  right: 0;
+
+  border: 1px solid black;
+  cursor: pointer;
+  font-style: italic;
+  padding: 20px;
+  transition: all 400ms ease-in;
+}
+
+.quote.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+.quote.hidden {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+i.add {
+  z-index: 10;
+
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
